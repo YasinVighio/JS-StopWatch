@@ -33,6 +33,7 @@ function reset()
     records.innerHTML+="<br>" + record;
     var counter=0;
     msecCounter.innerHTML=counter;
+    msecCounter.style.fontSize="20px";
     secCounter.innerHTML=counter;
     minCounter.innerHTML=counter;
     hrCounter.innerHTML=counter;
@@ -43,7 +44,11 @@ function updateTime()
 {
     var counterVal = Number(msecCounter.textContent);
     counterVal+=4;
-    msecCounter.style.animation="slideup 1ms ease-in-out infinite"
+    msecCounter.style.animation="slideup 1ms ease-in-out infinite";
+    if(counterVal>99)
+    {
+        msecCounter.style.fontSize="15px"; //Reducing microsecond font due to overflow of three digits
+    }
     if(counterVal>=1000)
         {
         counterVal=0;
