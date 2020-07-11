@@ -23,7 +23,7 @@ function pause()
     msecCounter.style.animation="none";
     secCounter.style.animation="none";
     minCounter.style.animation="none";
-    mhrCounter.style.animation="none";
+    hrCounter.style.animation="none";
 
 }
 
