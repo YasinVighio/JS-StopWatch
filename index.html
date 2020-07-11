@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap-4.4.1-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="css/fontawesome-free-5.13.0-web/css/all.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>JS Stopwatch</title>
+</head>
+<body>
+
+    <div class="logo">
+        <i class="fas fa-stopwatch"></i> <br> JS Stop Watch
+    </div>
+
+<div class="container">  
+<div class="row justify-content-lg-center justify-content-md-center justify-content-sm-center justify-content-center timer">
+    <div class="col-2 col-sm-2 col-md-2 col-lg-1 hr">
+        <p id="hour">0</p>
+    </div>
+
+    <div class="col-2 col-sm-2 col-md-2 col-lg-1 min">
+        <p id="minute">0</p>
+    </div>
+
+    <div class="col-2 col-sm-2 col-md-2 col-lg-1 sec">
+        <p id="second">0</p>
+    </div>
+
+    <div class="col-2 col-sm-2 col-md-2 col-lg-1 msec">
+        <p id="msecond">0</p>
+    </div>
+</div>
+</div>
+
+<div class="bts">
+    <div class="buttons">
+
+        <div class="start">
+            <button onclick="start()" id="strtbt">
+            Start
+            </button>
+        </div>
+        <div class="pause">
+            <button onclick="pause()">
+                Pause
+            </button>
+        </div>
+        <div class="reset">
+            <button onclick="reset()" id="resetbt">
+                Reset
+            </button>
+        </div>
+
+    </div>
+</div>
+
+<div id="records">
+    
+</div>
+
+<script src="js/app.js"></script>
+ <script src="js/jquery-3.5.1.min.js"></script>
+ <script src="js/popper.min.js"></script>
+ <script src="css/bootstrap-4.4.1-dist/js/bootstrap.js"></script>   
+</body>
+</html>

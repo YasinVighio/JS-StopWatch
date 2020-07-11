@@ -1,0 +1,99 @@
+body
+{
+    background-color: blue;
+}
+
+.logo
+{
+    text-align: center;
+    width: 300px;
+    margin: 0 auto;
+    color: white;
+    font-size: 30px;
+    margin-bottom: 30px;
+    font-family: cursive;
+    animation: heading-anim 1s ease-in-out infinite alternate;
+    transition: transform .5s;
+}
+
+.hr, .min, .sec, .msec
+{
+    background-image: linear-gradient(rgb(238, 238, 238), white, skyblue);
+    border: 2px solid skyblue;
+    height: 100px;
+    margin: 10px;
+    color: black;
+    text-align: center;
+    overflow-y: hidden;
+    
+}
+
+.timer p
+{
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+    top: 30%;
+    overflow-y: hidden;
+}
+
+.buttons
+{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+
+.buttons button
+{
+    background-image: linear-gradient(rgb(238, 238, 238), white, skyblue);
+    border: 1px solid skyblue;
+    padding: 10px;
+    border-radius: 20px;
+    margin: 20px;
+}
+
+
+#records
+{
+    color: yellow;
+    font-family: monospace;
+    text-align: center;
+}
+
+
+@keyframes slideup
+{
+from
+{
+    top: 100%;
+}
+to
+{
+    top: -10%;
+}
+}
+
+@keyframes slideup-middle
+{
+from
+{
+    top: 100%;
+}
+to
+{
+    top: 30%;
+}
+}
+
+@keyframes heading-anim
+{
+    from{
+        transform: scale(1);
+    }
+    to
+    {
+        transform: scale(1.1);
+    }
+}
